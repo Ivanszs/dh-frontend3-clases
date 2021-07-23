@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lista de películas con React</title>
+  </head>
+
+  <body>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+
+    <div id="root"></div>
+
+    <script type="text/javascript">
+      const lista = [
+        "Mean Girls",
+        "Die Hard",
+        "Hot Fuzz",
+        "Kill Bill",
+        "John Wick",
+        "Shrek",
+        "Ted",
+        "The Godfather",
+        "Avengers",
+        "Amelie",
+        "The Dark Knight",
+        "Angry Men",
+        "Flashback",
+        "Luca",
+        "Cruella",
+        "Pulp Fiction",
+        "The Good, the Bad and the Ugly",
+        "Fight Club",
+        "Forrest Gump",
+        "Inception",
+        "Goodfellas",
+        "Life Is Beautiful",
+        "Spirited Away",
+        "Interstellar",
+        "The Pianist",
+        "etc"
+      ];
+
+      function Peliculas(props) {
+        const elements = props.pelicula.map((peli) =>
+          React.createElement("li", null, peli)
+        );
+        const peliculas = React.createElement("ul", null, elements);
+        return peliculas;
+      }
+
+      ReactDOM.render(
+        React.createElement(Peliculas, { pelicula: lista }, null),
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
