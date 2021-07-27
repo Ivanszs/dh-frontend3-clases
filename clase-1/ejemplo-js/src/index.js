@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const lista = [
   "Mean Girls",
   "Die Hard",
