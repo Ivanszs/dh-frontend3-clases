@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Práctica clase 1</title>
+  </head>
+  <body>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+
+    <div id="root"></div>
+
+    <script type="text/javascript">
+      const container = React.createElement(
+        "div",
+        null,
+        React.createElement("h1", null, "Con lo visto hasta ahora"),
+        React.createElement("h2", null, "Replica este HTML"),
+        React.createElement("h3", null, "Usando"),
+        React.createElement("h4", null, "React.js"),
+        React.createElement("footer", null, "Suerte!")
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>
