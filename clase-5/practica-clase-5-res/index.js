@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import EnsaladaDeFrutas from "./src/EnsaladaDeFrutas"
+import ListaDeClientes from "./src/ListaDeClientes"
 
 ReactDOM.render(
-  <EnsaladaDeFrutas />,
+  <ListaDeClientes />,
   document.getElementById("root")
 );
