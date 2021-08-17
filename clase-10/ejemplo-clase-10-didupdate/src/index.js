@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {imHungryFor: "Empanadas"};
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({imHungryFor: "Pizza"})
+    }, 1000)
+  }
+  componentDidUpdate() {
+    document.getElementById("myH2").innerHTML =
+    "Ahora tengo ganas de comer " + this.state.imHungryFor;
+    console.log("El componente se actualizó!");
+  }
+  render() {
+    return (
+      <div>
+      <h1>Tengo ganas de comer {this.state.imHungryFor}</h1>
+      <h2 id="myH2"></h2>
+      </div>
+    );
+  }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<Header />, document.getElementById('root'));
