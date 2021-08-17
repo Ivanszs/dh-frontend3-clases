@@ -1,9 +1,15 @@
 import React from "react";
-import Puntos from "./components/Puntos"
 
 class App extends React.Component {
   render() {
-    return <Puntos />
+    return (
+    <div>
+      <h1>HOLA</h1>
+      <h1>HOLA</h1>
+      <h1>HOLA</h1>
+      <h1>MUNDO</h1>
+    </div>
+    )
   }
 }
 

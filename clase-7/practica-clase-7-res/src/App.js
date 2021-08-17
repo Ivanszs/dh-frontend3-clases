@@ -1,9 +1,18 @@
 import React from "react";
-import Puntos from "./components/Puntos"
+
+const lista = ["HOLA", "HOLA", "HOLA", "MUNDO"];
 
 class App extends React.Component {
   render() {
-    return <Puntos />
+    return (
+      <div>
+        {lista.map((n, index) => (
+          <h1 style={{ color: "blue", textAlign: "center" }} key={`id${index}`}>
+            {n}
+          </h1>
+        ))}
+      </div>
+    );
   }
 }
 
