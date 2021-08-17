@@ -5,7 +5,7 @@ class Container extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-                    imHungryFor: "Empanadas", 
+                    imHungryFor: "", 
                     show: true
                  };
   }
