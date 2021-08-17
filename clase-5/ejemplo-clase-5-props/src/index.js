@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import EnsaladaDeFrutas from "./src/EnsaladaDeFrutas"
+import EnsaladaDeFrutas from "./EnsaladaDeFrutas"
 
 ReactDOM.render(
   <EnsaladaDeFrutas />,

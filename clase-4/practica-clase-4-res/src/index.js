@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import meme from "./src/satisfied.png";
+import meme from "./satisfied.png";
 
 ReactDOM.render(
   <img src={meme} alt="satisfied meme" />,

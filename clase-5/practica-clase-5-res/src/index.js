@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ListaDeClientes from "./src/ListaDeClientes"
+import ListaDeClientes from "./ListaDeClientes"
 
 ReactDOM.render(
   <ListaDeClientes />,
